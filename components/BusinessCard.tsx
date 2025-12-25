@@ -4,7 +4,7 @@ import React from 'react';
 
 const BusinessCard = () => {
   return (
-    <div className="fade-in w-full max-w-2xl">
+    <div className="fade-in w-full max-w-xl">
       {/* Terminal Window */}
       <div className="border-2 border-white bg-black">
         {/* Terminal Title Bar */}
@@ -18,7 +18,7 @@ const BusinessCard = () => {
         </div>
 
         {/* Terminal Content */}
-        <div className="p-6 md:p-8 space-y-4 font-mono text-sm md:text-base">
+        <div className="p-4 md:p-6 space-y-3 font-mono text-xs md:text-sm">
           {/* Prompt Line */}
           <div className="text-green-400">
             <span className="mr-2">$</span>
@@ -26,8 +26,8 @@ const BusinessCard = () => {
           </div>
 
           {/* Name Section */}
-          <div className="mt-6">
-            <div className="text-2xl md:text-3xl font-bold mb-2">
+          <div className="mt-4">
+            <div className="text-xl md:text-2xl font-bold mb-2">
               LEE STOTTS
             </div>
             <div className="text-gray-400 mb-1">
