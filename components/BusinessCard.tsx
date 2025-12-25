@@ -79,12 +79,12 @@ const BusinessCard = () => {
               <div>
                 <span className="text-gray-400">linkedin:</span>{' '}
                 <a 
-                  href="https://linkedin.com/in/leestotts" 
+                  href="https://linkedin.com/in/lee-stotts-33a149b" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:underline"
                 >
-                  linkedin.com/in/leestotts
+                  linkedin.com/in/lee-stotts-33a149b
                 </a>
               </div>
               <div>
