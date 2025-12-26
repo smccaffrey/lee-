@@ -27,8 +27,8 @@ body {
   animation: fadeIn 1.5s ease-in;
 }
 
-/* Flashing terminal prompt icon */
-@keyframes flash {
+/* Blinking animation for terminal prompt icon and cursor */
+@keyframes blink {
   0%, 49% {
     opacity: 1;
   }
@@ -38,18 +38,8 @@ body {
 }
 
 .terminal-prompt-icon {
-  animation: flash 1s infinite;
+  animation: blink 1s infinite;
   display: inline-block;
-}
-
-/* Better blinking cursor animation */
-@keyframes blink {
-  0%, 49% {
-    opacity: 1;
-  }
-  50%, 100% {
-    opacity: 0;
-  }
 }
 
 .animate-blink {
