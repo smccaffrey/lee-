@@ -4,6 +4,19 @@ import React from 'react';
 import { QRCodeSVG } from 'qrcode.react';
 
 const BusinessCard = () => {
+  // vCard data for iOS contact creation
+  const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Lee Stotts
+N:Stotts;Lee;;;
+TITLE:Business Professional
+EMAIL:lee@example.com
+TEL:+15551234567
+URL:https://leestotts.dev
+URL:https://github.com/leestotts
+URL:https://linkedin.com/in/lee-stotts-33a149b
+END:VCARD`;
+
   return (
     <div className="fade-in w-full max-w-4xl">
       {/* Terminal Window */}
@@ -15,8 +28,7 @@ const BusinessCard = () => {
             <div className="w-3 h-3 rounded-full border border-white"></div>
             <div className="w-3 h-3 rounded-full border border-white"></div>
           </div>
-          <div className="ml-4 text-sm flex items-center">
-            <span className="terminal-prompt-icon mr-2">▶</span>
+          <div className="ml-4 text-sm">
             <span>lee-stotts.terminal</span>
           </div>
         </div>
@@ -28,7 +40,7 @@ const BusinessCard = () => {
             <div className="md:col-span-2 space-y-4 font-mono text-sm md:text-base">
               {/* Prompt Line */}
               <div className="text-green-400 flex items-center">
-                <span className="terminal-prompt-icon mr-2">▶</span>
+                <span className="mr-2">$</span>
                 <span>cat contact.txt</span>
               </div>
 
@@ -38,7 +50,7 @@ const BusinessCard = () => {
                   LEE STOTTS
                 </div>
                 <div className="text-green-400 text-lg mb-3">
-                  Software Engineer
+                  Business Professional
                 </div>
               </div>
 
@@ -105,9 +117,9 @@ const BusinessCard = () => {
               <div className="py-2">
                 <div className="text-gray-500 font-semibold mb-2">BIO:</div>
                 <div className="pl-4 text-gray-300 leading-relaxed">
-                  Passionate software engineer dedicated to building elegant solutions
-                  and crafting exceptional user experiences. Specializing in modern web
-                  technologies and clean, maintainable code.
+                  Experienced professional focused on delivering results and building 
+                  strong relationships. Committed to excellence and continuous improvement 
+                  in all endeavors.
                 </div>
               </div>
 
@@ -123,14 +135,14 @@ const BusinessCard = () => {
               <div className="text-gray-500 font-mono text-sm font-semibold">SCAN ME:</div>
               <div className="bg-white p-3 rounded">
                 <QRCodeSVG 
-                  value="https://leestotts.dev" 
+                  value={vCardData}
                   size={160}
                   level="H"
                   includeMargin={false}
                 />
               </div>
               <div className="text-gray-400 text-xs text-center font-mono">
-                Visit my website
+                Add to contacts
               </div>
             </div>
           </div>
