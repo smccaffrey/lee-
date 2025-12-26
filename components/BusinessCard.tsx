@@ -34,10 +34,10 @@ END:VCARD`;
         </div>
 
         {/* Terminal Content */}
-        <div className="p-6 md:p-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+        <div className="p-3 md:p-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
             {/* Main Content - Left/Center Column */}
-            <div className="md:col-span-2 space-y-4 font-mono text-sm md:text-base">
+            <div className="md:col-span-2 space-y-2 font-mono text-sm md:text-base">
               {/* Prompt Line */}
               <div className="text-green-400 flex items-center">
                 <span className="mr-2">$</span>
@@ -45,18 +45,18 @@ END:VCARD`;
               </div>
 
               {/* Name Section */}
-              <div className="mt-4">
-                <div className="text-2xl md:text-3xl font-bold mb-3 tracking-wide">
+              <div className="mt-1">
+                <div className="text-xl md:text-3xl font-bold mb-1 tracking-wide">
                   LEE STOTTS
                 </div>
-                <div className="text-green-400 text-lg mb-3">
+                <div className="text-green-400 text-sm md:text-lg mb-1">
                   Business Professional
                 </div>
               </div>
 
               {/* Contact Information */}
-              <div className="space-y-3 py-2">
-                <div className="flex flex-col space-y-2">
+              <div className="space-y-2 py-1">
+                <div className="flex flex-col space-y-1">
                   <div className="flex items-start">
                     <span className="text-gray-500 w-24 flex-shrink-0">EMAIL:</span>
                     <a 
@@ -74,9 +74,9 @@ END:VCARD`;
               </div>
 
               {/* Social Links */}
-              <div className="space-y-2 py-2">
-                <div className="text-gray-500 font-semibold mb-2">LINKS:</div>
-                <div className="space-y-2 pl-4">
+              <div className="space-y-1 py-1">
+                <div className="text-gray-500 font-semibold mb-1">LINKS:</div>
+                <div className="space-y-1 pl-4">
                   <div className="flex items-start">
                     <span className="text-gray-400 w-20 flex-shrink-0">github:</span>
                     <a 
@@ -114,29 +114,27 @@ END:VCARD`;
               </div>
 
               {/* Bio/Tagline */}
-              <div className="py-2">
-                <div className="text-gray-500 font-semibold mb-2">BIO:</div>
-                <div className="pl-4 text-gray-300 leading-relaxed">
-                  Experienced professional focused on delivering results and building
-                  strong relationships. Committed to excellence and continuous improvement
-                  in all endeavors.
+              <div className="py-1">
+                <div className="text-gray-500 font-semibold mb-1">BIO:</div>
+                <div className="pl-4 text-gray-300 text-sm leading-snug">
+                  Professional focused on delivering results and building strong relationships.
                 </div>
               </div>
 
               {/* Cursor */}
-              <div className="flex items-center pt-4">
+              <div className="flex items-center pt-2">
                 <span className="terminal-prompt-icon text-green-400 mr-2">▶</span>
                 <span className="inline-block w-2 h-4 bg-white animate-blink"></span>
               </div>
             </div>
 
             {/* QR Code - Right Column */}
-            <div className="md:col-span-1 flex flex-col items-center justify-start space-y-3">
-              <div className="text-gray-500 font-mono text-sm font-semibold">SCAN ME:</div>
-              <div className="bg-white p-3 rounded">
+            <div className="md:col-span-1 flex flex-col items-center justify-start space-y-1">
+              <div className="text-gray-500 font-mono text-xs md:text-sm font-semibold">SCAN ME:</div>
+              <div className="bg-white p-2 rounded">
                 <QRCodeSVG 
                   value={vCardData}
-                  size={160}
+                  size={120}
                   level="H"
                   includeMargin={false}
                 />
