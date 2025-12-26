@@ -117,8 +117,8 @@ END:VCARD`;
               <div className="py-2">
                 <div className="text-gray-500 font-semibold mb-2">BIO:</div>
                 <div className="pl-4 text-gray-300 leading-relaxed">
-                  Experienced professional focused on delivering results and building 
-                  strong relationships. Committed to excellence and continuous improvement 
+                  Experienced professional focused on delivering results and building
+                  strong relationships. Committed to excellence and continuous improvement
                   in all endeavors.
                 </div>
               </div>
